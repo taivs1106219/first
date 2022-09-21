@@ -2,7 +2,7 @@
 
 int main(int argc, char **argv)
 {
-    char name, id, address;
+    char name[20], id[20], address[30];
     printf("請輸入姓名：");
     scanf("%s", &name);
     printf("\n");
@@ -18,4 +18,6 @@ int main(int argc, char **argv)
     printf("確認所填資訊：");
     printf("%s，身份證第一碼是%s\n", name, id);
     printf("地址：%s", address);
+
+    return 0;
 }
