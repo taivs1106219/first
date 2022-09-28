@@ -1,7 +1,7 @@
 #include <iostream>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
+using namespace std;
 int main(int argc, char **argv)
 {
 	// printf("hello C艹\n");
@@ -38,9 +38,15 @@ int main(int argc, char **argv)
 	// printf("姓名\t國文\t英文\t數學\n");
 	// printf("崔恩奇\t100\t100\t100");
 
-	int n1 = 0, n2 = 0;
-	scanf("%d %d", &n1, &n2);
-	printf("n1=%d\nn2=%d", n1, n2);
+	// int n1 = 0, n2 = 0;
+	// scanf("%d %d", &n1, &n2);
+	// printf("n1=%d\nn2=%d", n1, n2);
+	int chi, eng, math;
+
+	cout << "請輸入國文、英文和數學三科分數（整數）" << endl;
+	cin >> chi >> eng >> math;
+	cout << "國文\t英文\t數學\t平均\n";
+	cout << chi << "\t" << eng << "\t" << math << "\t" << (float)(chi + eng + math) / 3;
 
 	return 0;
 }
